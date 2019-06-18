@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: <%= bg_color %>;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <%= secret_number_message %>
+    </p>
+    
+    <form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
+    
+    <p>Guess is <%= message %></p>
+    <p>Tries Remaining <%= attempts %></p>
+    <p><%= win_lose_msg %></p>
+  </body>
+</html>
